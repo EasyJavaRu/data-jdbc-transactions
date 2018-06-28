@@ -143,7 +143,7 @@ public final class App {
             System.out.println("Client data after three savepoints:");
             printClientData(db);
             db.rollback(secondItem);
-            System.out.println("Client data after first savepoint:");
+            System.out.println("Client data after second savepoint:");
             printClientData(db);
             db.releaseSavepoint(firstItem);
             db.releaseSavepoint(thirdItem);
